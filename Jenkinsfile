@@ -40,5 +40,9 @@ pipeline{
                 sh "docker compose down && docker compose up -d"
             }
         }
+        stage("Test"){
+            steps{
+                echo "Code changes from github"
+            }
     }
 }
